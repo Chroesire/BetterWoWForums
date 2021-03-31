@@ -11,6 +11,7 @@ You'll need a userstyle extension for your browser. My recommendations:
 * Safari: [Cascadea](https://cascadea.app)
 
 Once you have an extension, you should be able to install the userstyle by clicking below:
+
 [Install User Style](https://github.com/Chroesire/BetterWoWForums/raw/main/BetterWoWForums.user.css)
 
 At this point, navigate to the WoW forums or reload existing WoW forum tabs.
