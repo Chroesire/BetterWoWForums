@@ -6,8 +6,8 @@ A userstyle that makes the official WoW forums use your system's font and option
 ### Installation
 You'll need a userstyle extension for your browser. My recommendations:
 * Chrome: [Stylus for Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)
-* Edge: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) (Edge can install Chrome extensions)
-* Firefox: [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+* Edge: [Stylus for Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) (Edge can install Chrome extensions)
+* Firefox: [Stylus for Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 * Safari: [Cascadea](https://cascadea.app)
 
 Once you have an extension, you should be able to install the userstyle by clicking below:
