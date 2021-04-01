@@ -1,40 +1,55 @@
 /* ==UserStyle==
-@name			BetterWoWForums
-==/UserStyle== */
+@name           BetterWoWForums
+@namespace      github.com/Chroesire/BetterWoWForums
+@version        1.0.0
+@description    Various adjustments for the official WoW forums.
+@author         Chroesire
+@updateURL      https://github.com/Chroesire/BetterWoWForums/raw/main/BetterWoWForums.user.css
 
-@-moz-document url-prefix("https://us.forums.blizzard.com/en/wow/")
-{
-	:root {
-	    --bg-image: /*[[bg-image]]*/;
-	  }
-	
-	body, .Theme--wow .Navbar, .Theme--wow .Subnav {
-		--main-background-image: url("http://i.imgur.com/QnsPjna.jpg");
-		background-image: url("http://i.imgur.com/QnsPjna.jpg") !important;
-	}
-	    
-	* {
-		font-family: system-ui !important;
-	}
-	
-	a.fancy-title {
-		font-family: system-ui !important;
-	}
-	
-	.text-base, p, li {
-		font-size: 15px;
-	}
-	
-	code, pre {
-		font-family: monospace !important;
-	}
-	
-	/* CoT: http://i.imgur.com/QnsPjna.jpg
-	   BEM: http://i.imgur.com/GmvR6LQ.jpg,
-	   Zan: http://i.imgur.com/m3WfBrR.jpg,
-	   Elf: http://i.imgur.com/VKBVPAG.jpg,
-	   Nag: http://i.imgur.com/tnMKSx3.jpg,
-	   Evr: http://i.imgur.com/ZFLsvhM.jpg,
-	   War: http://i.imgur.com/FCl5L1t.jpg,
-	   WoW: http://i.imgur.com/l8x6d6K.jpg */
+@var checkbox useBG "Use custom background" 1
+@var select bgImage "Background" {
+  "Caverns of Time": "QnsPjna",
+  "Blade's Edge Mountains": "GmvR6LQ",
+  "Zangarmarsh": "m3WfBrR",
+  "Blood Elf": "VKBVPAG",
+  "Nagrand": "tnMKSx3",
+  "Eversong Forest": "ZFLsvhM",
+  "After the Battle": "FCl5L1t",
+  "Dark Portal": "l8x6d6K" 
+}
+@var text     fontSize   "Font size"    15px
+
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document domain("forums.blizzard.com") {
+    :root {
+        if useBG {
+            body,
+            .Navbar,
+            .d-header,
+            .Theme--wow .Navbar,
+            .Theme--wow .Subnav {
+                background-image: url("http://i.imgur.com/" + bgImage + ".jpg") !important;
+            }
+        }
+
+        * {
+            font-family: system-ui !important;
+        }
+
+        a.fancy-title {
+            font-family: system-ui !important;
+        }
+
+        .text-base,
+        p,
+        li {
+            font-size: fontSize;
+        }
+
+        code,
+        pre {
+            font-family: monospace !important;
+        }
+    }
 }
