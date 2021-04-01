@@ -8,14 +8,14 @@
 
 @var checkbox useBG "Use custom background" 1
 @var select bgImage "Background" {
-  "Caverns of Time": "QnsPjna",
-  "Blade's Edge Mountains": "GmvR6LQ",
-  "Zangarmarsh": "m3WfBrR",
-  "Blood Elf": "VKBVPAG",
-  "Nagrand": "tnMKSx3",
-  "Eversong Forest": "ZFLsvhM",
-  "After the Battle": "FCl5L1t",
-  "Dark Portal": "l8x6d6K" 
+  "Caverns of Time": "caverns",
+  "Blade's Edge Mountains": "bladesedge",
+  "Zangarmarsh": "zangar",
+  "Blood Elf": "belf",
+  "Nagrand": "nagrand",
+  "Eversong Forest": "eversong",
+  "After the Battle": "battle",
+  "Dark Portal": "darkportal" 
 }
 @var text     fontSize   "Font size"    15px
 
@@ -29,7 +29,7 @@
             .d-header,
             .Theme--wow .Navbar,
             .Theme--wow .Subnav {
-                background-image: url("http://i.imgur.com/" + bgImage + ".jpg") !important;
+                background-image: url("https://u.cubeupload.com/chroesire/" + bgImage + ".jpg") !important;
             }
         }
 
